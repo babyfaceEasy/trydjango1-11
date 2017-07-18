@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title> {% block head_title %} | MuyPicky.com {% endblock head_title %}</title>
+	{% include 'snippets/css.html' %}
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<h1>MuyPicky.com</h1>
+	{% include 'snippets/nav.html' %}
 	<div  class="container">
 		{% block content %}
+			Olakunle
 		{% endblock content %}
 	</div>
+
+	{% include 'snippets/javascript.html' %}
 </body>
 </html>
