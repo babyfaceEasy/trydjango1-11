@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+	{% block content %}
+	<p>
+		{% if bool_item %}
+			Random number is {{num}}
+		{% endif %}
+	</p>
+
+	<ul>
+		{% for var_name in names_list %}
+			<li>{{var_name}}</li>
+		{% endfor %}
+	</ul>
+{% endblock content%}
